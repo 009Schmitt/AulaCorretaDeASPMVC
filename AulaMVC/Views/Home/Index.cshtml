@@ -1,0 +1,65 @@
+﻿
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p> Bem Vindo </p>
+</div>
+
+<br />
+<form action="/Home/Privacy" method="post">
+    <div>
+        <label> Vai para a privacy polices</label>
+        <input type="submit" name="Privacy"/>
+    </div>
+</form>
+
+<br />
+<a href="https://www.google.com/" target="_blank"> Vai para o google em uma nova aba</a>
+<a href="https://www.google.com/"> Vai para o google</a>
+<br />
+
+<form action="/Home/Cadastro" method="post">
+    <div>
+        <input type="number" name="ID" value="@ViewBag.IdPessoa" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Nome" value="@ViewBag.Nome" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Cpf" value="@ViewBag.Cpf" />
+    </div>
+    <input type="submit" />
+</form>
+<br />
+
+@*<div>
+        <input type="number" name="ID" value="@ViewBag.IdPessoa" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Nome" value="@ViewBag.Nome" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Cpf" value="@ViewBag.Cpf" />
+    </div>
+    <br />*@
+
+@*<div>
+        <input type="number" name="ID" value="@ViewData["IdPessoa"]" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Nome" value="@ViewData["Nome"]" />
+    </div>
+    <br />
+    <div>
+        <input type="text" name="Cpf" value="@ViewData["Cpf"]" />
+    </div>
+    <br />*@
